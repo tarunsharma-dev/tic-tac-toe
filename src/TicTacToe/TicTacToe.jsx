@@ -87,7 +87,7 @@ function TicTacToe() {
         Tic Tac Toe Game Using
         <span className="text-[#26ffcb] pl-[5px] lg:pl-[15px]">React</span>
       </h1>
-      <div className="board justify-center">
+      <div className="board justify-center items-center">
         <div className="row1">
           <div
             className="boxes"
