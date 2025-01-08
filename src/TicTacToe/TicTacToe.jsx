@@ -72,20 +72,20 @@ function TicTacToe() {
     setLock(false);
     data = ["", "", "", "", "", "", "", "", ""];
     setCount(0);
-    titleRef.current.innerHTML = `Tic Tac Toe Game Using<span class="text-[#26ffcb] pl-[15px]">React</span>`;
+    titleRef.current.innerHTML = `Tic Tac Toe Game Using<span class="text-[#26ffcb] pl-[5px] lg:pl-[15px]">React</span>`;
     box_arr.map((e) => {
       e.current.innerHTML = "";
     });
   };
 
   return (
-    <div className="container text-center">
+    <div className="container text-center my-[50px]">
       <h1
-        className="title text-white flex justify-center items-center my-[30px] text-[60px]"
+        className="title text-white flex justify-center items-center mb-[50px] text-lg lg:text-[60px]"
         ref={titleRef}
       >
         Tic Tac Toe Game Using
-        <span className="text-[#26ffcb] pl-[15px]">React</span>
+        <span className="text-[#26ffcb] pl-[5px] lg:pl-[15px]">React</span>
       </h1>
       <div className="board justify-center">
         <div className="row1">
@@ -161,7 +161,7 @@ function TicTacToe() {
         </div>
       </div>
       <button
-        className="reset w-[250px] h-[100px] border-0 outline-none cursor-pointer rounded-full bg-[#1f3540] text-2xl text-[#26ffcb] mt-[10px]"
+        className="reset w-[250px] h-[100px] border-0 outline-none cursor-pointer rounded-full bg-[#1f3540] text-2xl text-[#26ffcb] mt-[50px]"
         onClick={() => {
           reset();
         }}
