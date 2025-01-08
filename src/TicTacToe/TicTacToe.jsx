@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../assets/components/TicTacToe.scss";
 
 import circle_icon from "../assets/circle.png";
@@ -81,7 +81,7 @@ function TicTacToe() {
   return (
     <div className="container text-center">
       <h1
-        className="title text-white flex justify-center items-center mt-[50px] text-[60px]"
+        className="title text-white flex justify-center items-center my-[30px] text-[60px]"
         ref={titleRef}
       >
         Tic Tac Toe Game Using
@@ -161,7 +161,7 @@ function TicTacToe() {
         </div>
       </div>
       <button
-        className="reset w-[250px] h-[100px] border-0 outline-none cursor-pointer rounded-full bg-[#1f3540] text-2xl text-[#26ffcb] mt-[25px]"
+        className="reset w-[250px] h-[100px] border-0 outline-none cursor-pointer rounded-full bg-[#1f3540] text-2xl text-[#26ffcb] mt-[10px]"
         onClick={() => {
           reset();
         }}
